@@ -9,7 +9,6 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.LineNumberReader;
 import java.io.PrintWriter;
-import java.util.ArrayList;
 
 public class GeraArquivoLog {
 	String path = "arquivo_dispositivo.txt";	
@@ -61,8 +60,6 @@ public class GeraArquivoLog {
 	}
 			
 		public void listarArquivo() {		
-			ArrayList<String> arquivo = new ArrayList<String>();
-			
 			try {
 				FileInputStream arq = new FileInputStream(path);
 				InputStreamReader input = new InputStreamReader(arq);
@@ -73,7 +70,7 @@ public class GeraArquivoLog {
 					System.out.println("Cadastro vazio");
 				}
 				while (linha != null) {
-					msg.linha);
+					
 					linha = lerCadastro.readLine();
 				}
 				arq.close();
