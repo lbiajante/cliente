@@ -1,4 +1,4 @@
-package dispositivo;
+package cliente_dispositivo;
 
 import java.io.BufferedReader;
 import java.io.FileInputStream;
@@ -13,7 +13,7 @@ public class DispositivoClienteSocket {
 
 	private static Socket cliente;
 
-	public static void main(String[] args) {
+	public void executaClienteDispositivo() {
 		try {
 			cliente = new Socket("localhost", 6666);
 			System.out.println("Dispositivo conectado");
@@ -38,7 +38,7 @@ public class DispositivoClienteSocket {
 							mensagem = leitor.readLine();
 							if (mensagem.equals("::ERRO")) {
 								System.out
-										.println("Usuario de dispositivo nao cadastrado no servidor\n"
+										.println("Usuario de cliente_dispositivo nao cadastrado no servidor\n"
 												+ "Conexao encerrada");
 								System.exit(0);
 							} else if (mensagem.equals("::OK")) {

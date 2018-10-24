@@ -1,4 +1,4 @@
-package dispositivo;
+package cliente_dispositivo;
 
 import java.io.BufferedReader;
 import java.io.DataInputStream;

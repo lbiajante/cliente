@@ -1,3 +1,0 @@
-Main-Class: src.ClienteSocket
-Name: src/ClienteSocket.java
-Java-Bean: True

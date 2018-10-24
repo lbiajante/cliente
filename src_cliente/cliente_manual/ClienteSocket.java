@@ -1,4 +1,4 @@
-package src;
+package cliente_manual;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -8,7 +8,8 @@ import java.net.Socket;
 import java.net.UnknownHostException;
 
 public class ClienteSocket {
-	public static void main(String[] args) {
+	
+	public void executaClienteSocket() {
 		try {
 			final Socket cliente = new Socket("localhost", 5555);		
 			System.out.println("Cliente conectado");
@@ -50,6 +51,7 @@ public class ClienteSocket {
 				if (enviarMensagem.equalsIgnoreCase("sair")) {
 					System.out.println("Cliente encerrado");
 					System.exit(0);
+					cliente.close();
 				}
 			}
 		} catch (UnknownHostException e) {

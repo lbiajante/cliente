@@ -1,9 +1,0 @@
-- o dispositivo (cliente) ao se conectar precisa identificar o usuário, ou seja,
- a pessoa precisa existir no cadastro de pessoas, não há hipótese desse dispositivo estar com pessoa não cadastrada
- 
-- o dispositivo se conectará a uma porta diferente no ServerSocket, não se comunicando com o resto do programa
-
-- ao se conectar o dispositivo abrirá um arquivo serializado de registros de visitas e deverá descarregá-lo
- totalamente sem resposnder perguntas, cadastrando novos registros, novos lugares automaticamente em uma só conexão e encerrar a conexão
- 
-- na linha de comando deverá se optar pelo modo descarrega arquivo todo ou randomico (que ainda não entendi qual são os requisitos)

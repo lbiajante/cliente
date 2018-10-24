@@ -1,4 +1,4 @@
-package dispositivo;
+package cliente_dispositivo;
 
 public class RegistroVisitaDispositivo {
 
