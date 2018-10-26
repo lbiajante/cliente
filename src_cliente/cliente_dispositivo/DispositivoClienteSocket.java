@@ -1,6 +1,7 @@
 package cliente_dispositivo;
 
 import java.io.BufferedReader;
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -8,6 +9,8 @@ import java.io.ObjectOutputStream;
 import java.io.PrintWriter;
 import java.net.Socket;
 import java.net.UnknownHostException;
+
+import com.sun.org.apache.xalan.internal.xsltc.dom.AbsoluteIterator;
 
 public class DispositivoClienteSocket {
 
@@ -42,11 +45,15 @@ public class DispositivoClienteSocket {
 												+ "Conexao encerrada");
 								System.exit(0);
 							} else if (mensagem.equals("::OK")) {
+								
+								File filex = new File("arq");
+								System.out.println(filex.getAbsolutePath());
 
 								ObjectOutputStream out = new ObjectOutputStream(
 										cliente.getOutputStream());
 								file = new FileInputStream(
-										"arquivo_enviado_dispositivo.txt");
+										"C:\\workspace\\cliente\\src_cliente\\arquivo_enviado_dispositivo.txt");
+								
 								byte[] buffer = new byte[4096];
 
 								while (true) {
