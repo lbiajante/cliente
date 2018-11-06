@@ -10,8 +10,6 @@ import java.io.PrintWriter;
 import java.net.Socket;
 import java.net.UnknownHostException;
 
-import com.sun.org.apache.xalan.internal.xsltc.dom.AbsoluteIterator;
-
 public class DispositivoClienteSocket {
 
 	private static Socket cliente;

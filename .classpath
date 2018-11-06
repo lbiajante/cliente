@@ -2,5 +2,8 @@
 <classpath>
 	<classpathentry kind="src" path="src_cliente"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
+	<classpathentry kind="lib" path="C:/workspace/estudo_java/cadastro_com_registro/WebContent/WEB-INF/lib/javax.servlet.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
