@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Main-Class: cliente_linha.ClienteLinha
+Name: cliente_linha/ClienteLinha.java
+Java-Bean: True
